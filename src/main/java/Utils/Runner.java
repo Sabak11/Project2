@@ -31,7 +31,7 @@ public class Runner {
         stmt.executeUpdate(DropQuery);
         stmt.close();
         Conn.close();
-}
+    }
 
 
     @AfterMethod

@@ -33,7 +33,7 @@ public class BakurianiPageSteps extends BakurianiPage {
 
     @Step("check bakuriani text color")
     public BakurianiPageSteps checkTextColor() {
-         Assert.assertEquals(Color.fromString(getCategoryBakurianiColor.getCssValue("color")).asHex(),"#6e7cfa");
+        Assert.assertEquals(Color.fromString(getCategoryBakurianiColor.getCssValue("color")).asHex(),"#6e7cfa");
         return this;
     }
 

@@ -1,17 +1,18 @@
 package Utils;
 
 import DataObject.RegistrationData;
+import org.testng.annotations.Test;
 
 import java.sql.*;
 
 public class InsertDataToSql implements RegistrationData {
-
+    @Test
     public void InsertQuery() throws SQLException {
         Connection Conn = ConnectToSql.SqlConnection();
 
 
         String InsertDataQuery = "INSERT INTO [users].[dbo].[users] (firstname, lastname, phone, email, dateOfBirth, password)"
-                + "VALUES (?,?,?,?,?,?)";
+                + "values (?,?,?,?,?,?)";
 
         PreparedStatement prst = Conn.prepareStatement(InsertDataQuery);
         prst.setString(1,FirstNameValue);

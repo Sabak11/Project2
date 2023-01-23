@@ -19,7 +19,7 @@ public class SelectFromSql {
 
         Statement stmt = Conn.createStatement();
 
-        String SelectQuery = "SELECT * FROM users";
+        String SelectQuery = "SELECT * FROM [users].[dbo].[users]";
 
         ResultSet resultSet = stmt.executeQuery(SelectQuery);
         while (resultSet.next()) {

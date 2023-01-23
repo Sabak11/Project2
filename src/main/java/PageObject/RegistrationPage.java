@@ -20,5 +20,7 @@ public class RegistrationPage {
             fillPassword = $(By.id("pPassword")),
             fillConfirmPassword = $(By.id("pConfirmPassword")),
             cliclRegButton = $(By.className("dashbord-registration")),
-            genderVerifyMessage = $(By.id("physicalInfoMassage"));
+            genderVerifyMessage = $(By.xpath("//p[@id='physicalInfoMassage']"));
+
+
 }

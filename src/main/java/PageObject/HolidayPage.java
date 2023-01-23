@@ -15,15 +15,17 @@ public class HolidayPage {
             minPrice = $(By.xpath("(//input[@id='minprice'])[2]")),
             maxPrice = $(By.xpath("(//input[@id='maxprice'])[2]")),
 
-            holidayIconHover = $(By.xpath("//label[contains(text(),'დასვენება')]")),
+    holidayIconHover = $(By.xpath("//label[contains(text(),'დასვენება')]")),
 
-            bakurianiClick = $(By.xpath("//a[contains(text(),'ბაკურიანი')]")),
+    bakurianiClick = $(By.xpath("//a[contains(text(),'ბაკურიანი')]")),
 
-            scrollUp = $(By.xpath("//div[@class='special-offer']//div[@class='discounted-prices']//p[1]")),
+    scrollUp = $(By.xpath("//div[@class='special-offer']//div[@class='discounted-prices']//p[1]")),
 
-            VaucherPriceScroll = $(byXpath("//div[@class='special-offer']//div[@class='discounted-prices']//p[1]")),
+    VaucherPriceScroll = $(byXpath("//div[@class='special-offer']//div[@class='discounted-prices']//p[1]")),
 
-            searchButton = $(By.cssSelector("div[class='category-filter-desk'] div[class='submit-button']"));
+    searchButton = $(By.cssSelector("div[class='category-filter-desk'] div[class='submit-button']")),
+
+    body = $(By.id("body"));
 
 
     public ElementsCollection VaucherPrice = $$(byXpath("//div[@class='special-offer']//div[@class='discounted-prices']//p[1]"));

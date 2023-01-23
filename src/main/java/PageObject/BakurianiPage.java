@@ -14,9 +14,9 @@ public class BakurianiPage {
 
             categoryBakuriani = $(By.xpath("//div[@class='category-filter-desk']//a[contains(text(),'ბაკურიანი')]")),
 
-            getCategoryBakurianiColor = $(By.xpath("//div[@class='category-filter-desk']//a[contains(text(),'ბაკურიანი')]")),
+    getCategoryBakurianiColor = $(By.xpath("//div[@class='category-filter-desk']//a[contains(text(),'ბაკურიანი')]")),
 
-            locationBakuriani = $(By.xpath("//div[@class='category-filter-desk']//label[contains(text(),'ბაკურიანი')]")),
+    locationBakuriani = $(By.xpath("//div[@class='category-filter-desk']//label[contains(text(),'ბაკურიანი')]")),
             sort = $(By.id("sort")),
             sortLowPrice = $(By.xpath("//option[contains(text(),'ფასით კლებადი')]"));
 

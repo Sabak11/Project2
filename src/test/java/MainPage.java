@@ -5,7 +5,7 @@ import Utils.Runner;
 import Utils.SelectFromSql;
 import Utils.SqlCreate;
 import io.qameta.allure.*;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -23,12 +23,13 @@ public class MainPage extends Runner {
     InsertDataToSql InsertData = new InsertDataToSql();
     SelectFromSql selectSql = new SelectFromSql();
 
-    @BeforeTest
+    @BeforeClass
     public void GenerateData() throws SQLException {
         create.CreateDBAndTable();
-        selectSql.SelectQuery();
         InsertData.InsertQuery();
+        selectSql.SelectQuery();
     }
+
 
 
     HomePageSteps MainPageSteps = new HomePageSteps();
@@ -36,8 +37,6 @@ public class MainPage extends Runner {
     BakurianiPageSteps BakurianiPageSteps = new BakurianiPageSteps();
     RegistrationPageSteps RegistrationPageSteps = new RegistrationPageSteps();
     OpenBrowser openBrowser = new OpenBrowser();
-
-
 
 
 

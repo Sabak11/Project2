@@ -30,9 +30,9 @@ public class HolidayPageSteps extends HolidayPage {
 
     @Step("click on the search button ")
     public HolidayPageSteps searchButtonClick() {
-        searchButton.shouldBe(Condition.visible, Duration.ofMillis(5000)).click();
+        searchButton.shouldBe(Condition.visible, Duration.ofMillis(4000)).click();
         VaucherPriceScroll.scrollIntoView(true);
-        scrollUp.scrollIntoView(false);
+        body.shouldBe(Condition.attribute("style", "overflow: unset;"), Duration.ofMillis(4000));
         return this;
     }
 
@@ -67,18 +67,7 @@ public class HolidayPageSteps extends HolidayPage {
     }
 
 
- }
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 

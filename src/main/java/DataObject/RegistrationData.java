@@ -4,7 +4,7 @@ public interface RegistrationData {
 
     String
 
-            BirthDateValue = "12.12.1997",
+            BirthDateValue = "11-06-1999",
             EmailValue = "testmeil124@Gmail.com",
             FirstNameValue = "Jack",
             LastNameValue = "Holds",

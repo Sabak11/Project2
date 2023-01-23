@@ -5,6 +5,8 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
+import java.lang.Thread;
+
 
 public class RegistrationPageSteps extends RegistrationPage {
 
@@ -84,6 +86,7 @@ public class RegistrationPageSteps extends RegistrationPage {
 
     public RegistrationPageSteps clickRegButtonValue( ) {
         cliclRegButton.click();
+
         return this;
     }
 
@@ -92,8 +95,7 @@ public class RegistrationPageSteps extends RegistrationPage {
     @Step("Check that error message ‘გთხოვთ აირჩიოთ სქესი!’ is appear")
 
     public RegistrationPageSteps CheckGenderErrorMessage() {
-        genderVerifyMessage.getValue();
-        softAssert.assertEquals(genderVerifyMessage, "გთხოვთ აირჩიოთ სქესი!");
+        softAssert.assertEquals(genderVerifyMessage.getText(), "გთხოვთ აირჩიოთ სქესი!");
         softAssert.assertAll();
         return this;
 
